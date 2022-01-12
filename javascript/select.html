@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<p> select a new car</p>
+<select id ="myselect" name="mobil" onchange="myFunction()">
+	<option value = "Audi">audi</option>
+	<option value = "BMW">BMW</option>
+	<option value="Mercedes"> mercedes</option>
+</select>
+<input type="text" name="masukan" oninput="myText()" id="myText">
+<input type="text" id="inputan">
+
+<p id = "demo"></p>
+<p id = "demotext"></p>
+
+<script>
+function myFunction(){
+	var x = document.getElementById("myselect").value;z
+	document.getElementById("demo").innerHTML = "You selected: " + x;
+    document.getElementById("inputan").value = x;
+}
+function myText(){
+	var z = document.getElementById("myText").value;
+	document.getElementById("demotext").innerHTML = "You selected: " + z ;
+}
+</script>
+</body>
+</html>

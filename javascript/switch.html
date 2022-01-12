@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+    <TITLE>Contoh switch</TITLE>
+</HEAD>
+<BODY>
+    <SCRIPT LANGUAGE = "JavaScript">
+        var tanggal = new Date();
+        var kode_hari = tanggal.getDay();
+        var nama_hari = "";
+        switch(kode_hari) {
+            case 0:
+                nama_hari = "Minggu";
+                break;
+            case 1:
+                nama_hari = "Senin";
+                break;
+            case 2:
+                nama_hari = "Selasa";
+                break;
+            case 3:
+                nama_hari = "Rabu";
+                break;
+            case 4:
+                nama_hari = "Kamis";
+                break;
+            case 5:
+                nama_hari = "Jumat";
+                break;
+            case 6:
+                nama_hari = "Sabtu";
+        }
+        document.write("Hari ini hari " + nama_hari);
+        document.write(", tanggal "+ tanggal.getDate() +"/" +(tanggal.getMonth() + 1) + "/" + tanggal.getYear());
+    </SCRIPT>
+</BODY>
+</HTML>          
+    

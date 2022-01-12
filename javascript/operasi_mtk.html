@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<p>Pilih Operasi Matematika</p>
+<select id ="mySelect" name="math" onchange="myFunction()">
+	<option value = "Penambahan">Penambahan</option>
+	<option value = "Pengurangan">Pengurangan</option>
+	<option value="Perkalian"> Perkalian</option>
+    <option value="Pembagian"> Pembagian</option>
+</select>
+<br>Bilangan 1<input type="text" name="num1" id="num1">
+<br>Bilangan 2<input type="text" name="num2" id="num2">
+<br><br>Hasil Operasi Matematika <b id="operasi"></b> : <b id="hasil"></b>
+
+<script>
+function myFunction(){
+    var z = document.getElementById("mySelect").value;
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    if (z=="Penambahan"){
+        document.getElementById("operasi").innerHTML = z;
+        document.getElementById("hasil").innerHTML = parseInt(a)+parseInt(b);
+    }
+    else if (z="Pengurangan") {
+        document.getElementById("operasi").innerHTML = z;
+        document.getElementById("hasil").innerHTML = parseInt(a)-parseInt(b); 
+    }
+    else if (z="Perkalian") {
+        document.getElementById("operasi").innerHTML = z;
+        document.getElementById("hasil").innerHTML = parseInt(a)*parseInt(b); 
+    }
+    else if (z="Pembagian") {
+        document.getElementById("operasi").innerHTML = z;
+        document.getElementById("hasil").innerHTML = parseInt(a)/parseInt(b); 
+    }
+    else 
+    {
+        document.getElementById("operasi").innerHTML = "Tidak valid";
+        document.getElementById("hasil").innerHTML = "Tidak valid";
+    }
+}
+</script>
+</body>
+</html>
