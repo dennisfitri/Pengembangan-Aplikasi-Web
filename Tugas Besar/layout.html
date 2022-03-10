@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Membuat Layout</title>
+    <style>
+        #wrapper {
+            width: 100%;
+            margin: 0 auto;
+        }
+        #header {
+            background: #F1ECC3;
+            height: 100px;
+            padding: 2px 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        #header h1{
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            background-color: #79B4B7;
+        }
+        #content {
+            height: 1000px;
+            padding: 20px;
+            background-color: #DEEDF0;
+            margin-bottom: 10px;
+        }
+        #isi {
+            background: #C9D8B6;
+            float: right;
+            width: 70%;
+            height: 1000px;
+            position: absolute;
+        }
+        #isi img {
+            height: 380px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+        #isi h2 {
+            text-align: center;
+            font-size: 36px;
+            color: white;
+            background-color: #515E63;
+        }
+        #isi table{
+            font-size: 18px;
+            padding-left: 20px;
+        }
+        #sidebar {
+            background: #57837B;
+            float: left;
+            height: 700px;
+            width: 28%;
+        }
+        #sidebar h3{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            font-size: 25px;
+        }
+        #sidebar img{
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+        #sidebar h4{
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+        #sidebar p{
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+        #sidebar h5{
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+        #footer {
+            background: #515E63;
+            width: 100%;
+            height: 100px;
+            padding: 2px 10px;
+        }
+        #footer h4{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+			<div class="header">
+				<h1><a href="">Dennis Fi</h1>
+				<ul>
+					<li><a href="about.html"><i class="far fa-star"></i>About<a></li>
+					<li><a href="skills.html"><i class="fas fa-award"></i>Skills<a></li>
+					<li><a href="portofolio.html"><i class="fas fa-feather-alt"></i>Portfolio<a></li>
+					<li><a href="contact.html"><i class="fas fa-skull-crossbones"></i>Contact<a></li>
+				</ul>
+				
+				<!------- MENU MOBILE------>
+				<label for="check" class="mobile-menu"><i class="fas fa-align-justify"></i></label>
+			</div>
+		</header>
+       
+            <div id="sidebar">
+                <h3>Pemateri</h3>
+                <img src="foto.png">
+                <h4>Dennis Fitri Salsabilla Arianti</h4>
+                <p>Software Developer at Microsoft <br>
+                Data Engineer at Google<br><br><br><br><br></p>
+                <h5>202103002 <br> Sistem Informasi</h5>
+            </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h4>Sampai jumpa, semangat!!!</h4>
+        </div>
+    </div>
+</body>
+</html>
